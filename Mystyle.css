@@ -1,0 +1,250 @@
+ @charset "utf-8
+ /* CSS Document */
+Body {
+    background-image: url("../IMAGES/background1.jpg");
+    background-size: cover;
+    font-family: Arial, helvetica, times new roman;
+    margin: 0;
+    }
+h1, h2, h3 {
+    margin: 0;
+    padding: 25px;
+}
+
+h5 {
+    float: right;
+    margin-left: 630px;
+    margin-top: 5px;
+}
+blog {
+    Float: left;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    color:  deeppink;
+    width: 92.50%;
+}
+
+Article {
+    background: white;
+}
+article h3 {
+    float: left;
+    width: 95%;
+    height: 100px;
+    background: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: -35px;
+}
+
+article h4 {
+    float: left;
+    width: 95%;
+    height: 5px;
+    background: white;
+    padding: 30px;
+    margin-top: -55px;
+    font-size: 14px
+}
+
+table {
+    background: white;
+    width: 100%;
+    float: right;
+    
+}
+#container {
+    background-color: antiquewhite;
+    width: 800px;
+    height:900px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.header {
+    overflow: hidden;
+    color:black;
+    text-align: left;
+    padding: 10px;
+}
+
+.content{
+    padding: 0;
+}
+
+.topnav {
+    text-align: center;
+    width: 100%;
+    line-height: 35px;
+    background-color: bisque;
+    float: left;
+}
+.topnav a {
+    float: center;
+    display: block;
+    Color: black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.topnav ul {
+   float: left; 
+}
+
+.topnav ul li {
+    float: left;
+    list-style: none;
+    position:relative;
+}
+
+#nav ul li a {
+    display: block;
+    font-family: arial;
+    color:darkgreen;
+    font-size: 14px;
+    padding: 24px 14px;
+    text-decoration: none;
+}
+
+.topnav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding:10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.topnav ul li:hover ul {
+    Display: block;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    padding-right: 10px;
+    border-radius: 0px 0px 4px;
+}
+
+.topnav ul li ul li {
+    padding: 8px 14px;
+}
+.topnav ul li ul li a {
+    border-radius: 4px;
+}
+
+.topnav ul li ul li a:hover {
+    background-color: grey;
+}
+
+.flex-container {
+    background-color:white;
+    justify-content: center;
+    text-align: center;
+    clear: both;
+}
+
+.flex-container3 {
+    image-orientation: right;
+    display: flex;
+    justify-content: center;
+    clear: both;
+    text-align: left;
+    font-size: 14px;
+    flex-wrap: wrap;
+    clear:both;
+}
+
+.flex-container4 {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-wrapper {
+    height:20px;
+    position:relative;
+    width:400px;
+    margin:0 auto;
+}
+
+.carousel-item{
+    position:absolute;
+    top:-10;
+    bottom:5;
+    left:0;
+    right:0;
+    padding:30px 30px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+}
+.arrow{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 100px;
+}
+.arrow-prev {
+    left:-30px;
+    position:below;
+    top:50%;
+    transform: translatey(-50%) rotate (-45deg);
+}
+.arrow-next{
+    right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translatey(-50%) rotate(-45deg);
+}
+.light{
+    color:white
+}
+
+@media (max-width: 400px){
+    .arrow, .light .arrow {
+        background-size:10px;
+        background-position: 10px 50%;
+    }
+}
+
+/*select every element*/
+[id^"item"] {
+    display:none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background:url("../IMAGES/alljuice.jpg");
+    background-size:contain;
+}
+.item-2{
+    background:url("../IMAGES/fp1.jpg");
+     background-size:contain;
+}
+.item-3{
+    background:url("../IMAGES/fp2.jpg");
+     background-size:contain
+
+}
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-2:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+    }
+
+.footer2 {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    text-align: center;
+}
+
