@@ -214,15 +214,15 @@ table {
 .item-1 {
     z-index: 2;
     opacity: 1;
-    background:url("../IMAGES/alljuice.jpg");
+    background:url("alljuice.jpg");
     background-size:contain;
 }
 .item-2{
-    background:url("../IMAGES/fp1.jpg");
+    background:url("fp1.jpg");
      background-size:contain;
 }
 .item-3{
-    background:url("../IMAGES/fp2.jpg");
+    background:url("fp2.jpg");
      background-size:contain
 
 }
